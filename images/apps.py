@@ -7,4 +7,5 @@ class ImagesConfig(AppConfig):
 
     def ready(self):
         # import signal handlers
-        pass
+        import images.signals
+        print('Images app ready', images.signals)
